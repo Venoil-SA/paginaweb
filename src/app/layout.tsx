@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import { pop } from "./fonts/Fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`antialiased overflow-x-hidden`} style={pop.style}>
+        <Nav />
         {children}
+        <Footer />
+        <div className="bg-blue-950 text-white w-screen h-12 border-t-2 border-white  text-xs flex items-center justify-center">
+          © 2024. Todos los derechos reservados por Venoil S.A
+        </div>
       </body>
     </html>
   );
