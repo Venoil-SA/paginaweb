@@ -10,7 +10,7 @@ export default function Presentacion() {
         loop
         muted
       ></video>
-      <div className="absolute w-screen h-screen bg-gradient-to-b from-black/40 from-90% to-white"></div>
+      <div className="absolute w-screen h-screen bg-gradient-to-b from-black/40 from-95% to-white/90"></div>
       <div
         style={popt.style}
         className="w-auto text-white  p-24 rounded-xl flex flex-col gap-5 items-center justify-center h-auto z-10 "

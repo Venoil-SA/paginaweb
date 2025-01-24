@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Presidente() {
   return (
     <div className="w-screen flex flex-col items-center justify-center h-screen">
-      <h1 className="text-verde text-2xl" style={popt.style}>
+      <h1 className="text-verde text-5xl" style={popt.style}>
         Nuestro Presidente
       </h1>
       <div className="flex w-2/3 justify items-center p-24">
-        <p>
+        <p className="text-clip">
           Presidente de VenOil Energía con 23 años en el gerenciamiento de
           proyectos de gas y petróleo en diferentes campos de Argentina.
           <br />
