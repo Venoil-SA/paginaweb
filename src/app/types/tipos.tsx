@@ -9,6 +9,7 @@ export interface Yacimiento {
   nombre: string;
   descripcion: string;
   imagen?: string;
+  last?: boolean;
 }
 
 export interface Noticia {
@@ -22,4 +23,9 @@ export interface Valor {
   texto: string;
   imagen: string;
   id: number;
+}
+
+export interface Positionpop {
+  x: number;
+  y: number;
 }

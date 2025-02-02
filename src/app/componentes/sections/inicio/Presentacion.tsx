@@ -1,4 +1,4 @@
-import { ButtonR } from "../../Buttons";
+import { ButtonR } from "../../ButtonR";
 import { popt } from "@/app/fonts/Fonts";
 export default function Presentacion() {
   return (

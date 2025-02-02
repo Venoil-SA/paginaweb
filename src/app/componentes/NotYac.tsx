@@ -1,6 +1,6 @@
 import { pop } from "../fonts/Fonts";
 import { Noticia } from "../types/tipos";
-import { ButtonR } from "./Buttons";
+import { ButtonR } from "./ButtonR";
 
 export function TarjNot({ id, titulo, descripcion, imagen }: Noticia) {
   return (

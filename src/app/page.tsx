@@ -1,15 +1,17 @@
-import Presentacion from "./components/sections/inicio/Presentacion";
+import Presentacion from "./componentes/sections/inicio/Presentacion";
 
-import Enlace from "./components/sections/inicio/Enlace";
-import Campos from "./components/sections/inicio/Campos";
-import Presidente from "./components/sections/inicio/Presidente";
-import Noticias from "./components/sections/inicio/Noticias";
-import Valores from "./components/sections/inicio/Valores";
+import Enlace from "./componentes/sections/inicio/Enlace";
+import Campos from "./componentes/sections/inicio/Campos";
+import Presidente from "./componentes/sections/inicio/Presidente";
+import Noticias from "./componentes/sections/inicio/Noticias";
+import Valores from "./componentes/sections/inicio/Valores";
+import Mapa from "./componentes/sections/inicio/Mapa";
 
 export default function Home() {
   return (
     <div className="">
       <Presentacion />
+      <Mapa />
       <Campos />
       <Enlace />
       <Presidente />

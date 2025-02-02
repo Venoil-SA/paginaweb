@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { pop } from "../fonts/Fonts";
 
-export function Button() {
-  return <button></button>;
-}
-
 export function ButtonR({
   dir,
   texto,

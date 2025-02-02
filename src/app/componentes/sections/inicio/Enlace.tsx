@@ -1,4 +1,4 @@
-import { ButtonR } from "../../Buttons";
+import { ButtonR } from "../../ButtonR";
 import Image from "next/image";
 
 export default function Enlace() {
