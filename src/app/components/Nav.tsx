@@ -49,7 +49,7 @@ export default function Nav() {
           animate={{ y: 0, opacity: 1 }}
           className="hover:underline hover:decoration-verde transition-all"
           transition={{ delay: 0.3, duration: 0.2 }}
-          href="/"
+          href="/workWithUs"
         >
           Trabaja con nosotros
         </motion.a>

@@ -1,5 +1,5 @@
-import { ButtonR } from "../components/Buttons";
-import Footer from "../components/Footer";
+import { ButtonR } from "@/app/components/Buttons";
+// import Footer from "../components/Footer";
 
 export default function Operadora(){
     return(
