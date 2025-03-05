@@ -30,14 +30,14 @@ export default function MapaF() {
     <div className="h-full w-full">
       <svg
         fill="#ffffff"
-        height="1000"
+        height="auto"
         stroke="#54BB5A"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1"
         version="1.2"
         viewBox="0 0 1000 1000"
-        width="1000"
+        width="100%"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="features">

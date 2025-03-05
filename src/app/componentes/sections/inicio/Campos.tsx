@@ -48,8 +48,8 @@ export default function Campos() {
     },
   ];
   return (
-    <section className="w-screen h-auto flex items-center justify-center p-24  gap-5 bg-white">
-      <div className="grid grid-cols-3 w-full h-auto gap-5">
+    <section className="w-screen h-auto flex items-center justify-center p-2 lg:p-24 gap-2 lg:gap-5 bg-white">
+      <div className="grid grid-cols-2 lg:grid-cols-3 w-full h-auto gap-2 lg:gap-5">
         {cards.map((y, index) => {
           const isLastRowSingle =
             cards.length % 3 === 1 && index === cards.length - 1;

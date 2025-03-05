@@ -10,7 +10,7 @@ import {
 } from "react-icons/sl";
 export default function Footer() {
   return (
-    <footer className="bg-azul bottom-0 flex flex-col items-center md:items-start md:flex-row justify-around md:p-24 text-white gap-2 w-screen h-auto">
+    <footer className="bg-azul p-24 bottom-0 flex flex-col items-center md:items-start md:flex-row justify-around md:p-24 text-white gap-6 w-screen h-auto">
       <div>
         <Image
           src="/LOGO HORIZONTAL-03 1.png"
@@ -23,10 +23,10 @@ export default function Footer() {
         <h1 className="text-md font-bold text-center md:text-xl">
           Mapa del Sitio
         </h1>
-        <div className="mr-24 md:mr-0">
-          <p className=" flex text-xs md:text-base gap-5">
+        <div className="mr-24 flex flex-col gap-2 md:mr-0">
+          <a href="/" className=" flex text-xs md:text-base gap-5">
             <SlArrowRight /> Inicio
-          </p>
+          </a>
           <p className=" flex text-xs md:text-base gap-5">
             <SlArrowRight /> Operadora
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
         <h1 className="text-md font-bold text-center md:text-xl">
           Nuestro Contacto
         </h1>
-        <div className=" md:mr-0">
+        <div className=" md:mr-0 flex flex-col gap-2">
           <p className="flex text-xs md:text-base gap-5">
             <SlCallOut /> +54 263 4782743
           </p>
@@ -59,7 +59,7 @@ export default function Footer() {
         <h1 className="text-md font-bold text-center md:text-xl">
           Redes Sociales
         </h1>
-        <div className="mr-24  md:mr-0">
+        <div className="mr-24 flex flex-col gap-2  md:mr-0">
           <p className="flex gap-5 text-xs md:text-base">
             <SlSocialInstagram /> @Venoil_Energia
           </p>
