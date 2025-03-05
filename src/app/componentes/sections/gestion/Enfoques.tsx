@@ -25,8 +25,8 @@ export default function Enfoques() {
                   bounce: 0.8,
                 }}
                 viewport={{once:true}}
-                initial={{ y: -40 ,opacity:0}}
-                whileInView={{ y: 0 ,opacity:1}}
+                initial={{ y: -40 }}
+                whileInView={{ y: 0 }}
                 className="w-full lg:w-1/6  h-full flex flex-col gap-2"
                 key={id}
               >

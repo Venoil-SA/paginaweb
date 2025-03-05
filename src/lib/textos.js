@@ -18,7 +18,11 @@ const textos ={
             }
     },
     gestionintegrada:{
-        principios:["ISO 9001 - Gestión de la Calidad: Esta norma asegura que nuestros procesos estén diseñados para cumplir consistentemente con las expectativas de nuestros clientes,mejorando la eficiencia y fomentando la mejora continua.","ISO 14001 - Gestión Ambiental: Comprometidos con elcuidado del medio ambiente, implementamos esta norma para gestionar de manera responsable los impactos ambientales de nuestras actividades, promoviendo prácticas sostenibles y respetuosas con el entorno.","ISO 45001 - Gestión de la Seguridad y Salud en el Trabajo:Garantizamos la seguridad y el bienestar de nuestros empleados y colaboradores a través de sistemas que identifican, controlan y reducen los riesgos en el entorno laboral","Vigilamos cada detalle para garantizar la seguridad en todas nuestras operaciones."],
+        cenfoques:["verde","azul","verde","azul","verde","azul"],
+        lenfoques:["V","E","N","O","I","L"],
+        enfoques:["Evaluación de Riesgos de Seguridad","Adopción de Medidas de Mitigación","Trabajos en Altura y en Espacios Confinados","Izaje de Cargas","Manejo Defensivo","Medio Ambiente"],
+        principiosT:["ISO 9001 - Gestión de la calidad","ISO 14001 - Gestión Ambiental","ISO 45001 - Gestión de la Seguridad y Salud en el Trabajo"],
+        principios:["Esta norma asegura que nuestros procesos estén diseñados para cumplir consistentemente con las expectativas de nuestros clientes,mejorando la eficiencia y fomentando la mejora continua.","Comprometidos con elcuidado del medio ambiente, implementamos esta norma para gestionar de manera responsable los impactos ambientales de nuestras actividades, promoviendo prácticas sostenibles y respetuosas con el entorno.","Garantizamos la seguridad y el bienestar de nuestros empleados y colaboradores a través de sistemas que identifican, controlan y reducen los riesgos en el entorno laboral","Vigilamos cada detalle para garantizar la seguridad en todas nuestras operaciones."],
         gestion:["Establecemos estándares que protegen a nuestro equipo, las comunidades y el medio ambiente.","Nos comprometemos a prevenir riesgos mediante una gestión proactiva y responsable.","Optimizamos nuestros procesos para garantizar operaciones seguras y eficientes.","Innovamos constantemente en tecnologías que priorizan la seguridad en campo.","Lideramos con el ejemplo, promoviendo una cultura de seguridad en cada proyecto."]
     },
     noticias:[

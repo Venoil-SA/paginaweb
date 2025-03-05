@@ -16,13 +16,11 @@ export default function Presentacion() {
         className="w-auto text-white  p-24 rounded-xl flex flex-col gap-5 items-center text-center justify-center h-auto z-10 "
       >
         <h1 className=" text-xl lg:text-6xl">
-          Impulsamos la <span className="text-verde">energia</span> del{" "}
-          <span className="text-verde">futuro</span> con
+          Transformamos <span className="text-verde">desafios</span> en <span className="text-verde">oportunidades</span>.
         </h1>
-        <h1 className=" text-xl lg:text-6xl">experiencia lider en OIL & Gas</h1>
+        <h1 className=" text-xl lg:text-6xl">VENOIL ENERGIA</h1>
         <p className="text-sm lg:text-xl">
-          Somos <span className="text-verde">Futuro</span> , Somos{" "}
-          <span className="text-verde">Energia</span>
+          Innovando para un futuro <span className="text-verde">sostenible.</span>
         </p>
         <div className="w-full h-full flex item-center justify-center gap-5">
           <ButtonR texto="VER MAS" color="blanco" dir="/" />

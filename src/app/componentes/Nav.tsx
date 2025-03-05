@@ -6,14 +6,14 @@ import ToggleSwitch from "./toggleSwitch";
 export default function Nav() {
   return (
     <nav className="h-24 w-screen flex justify-around text-white  border-b-verde bg-azul p-12">
-      <div className="w-1/4 flex items-center justify-center">
+      <a href="/" className="w-1/4 flex items-center justify-center">
         <Image
           src="/LOGO HORIZONTAL-02 1.png"
           width={250}
           height={50}
           alt="a"
         />
-      </div>
+      </a>
       <div
         style={pop.style}
         className="w-2/4 hidden  h-full  lg:flex text-center flex-row items-center text-base justify-around"
@@ -32,7 +32,7 @@ export default function Nav() {
           animate={{ y: 0, opacity: 1 }}
           className="hover:underline hover:decoration-verde transition-all"
           transition={{ delay: 0.1, duration: 0.2 }}
-          href="/"
+          href="/operadora"
         >
           Operadora
         </motion.a>
@@ -41,7 +41,7 @@ export default function Nav() {
           animate={{ y: 0, opacity: 1 }}
           className="hover:underline hover:decoration-verde transition-all"
           transition={{ delay: 0.2, duration: 0.2 }}
-          href="/"
+          href="/gestion"
         >
           Gestion Integrada
         </motion.a>
