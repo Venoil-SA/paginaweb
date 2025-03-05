@@ -1,4 +1,4 @@
-import { ButtonR } from "../../Buttons";
+import { ButtonR } from "../../ButtonR";
 import { popt } from "@/app/fonts/Fonts";
 export default function Presentacion() {
   return (
@@ -13,14 +13,14 @@ export default function Presentacion() {
       <div className="absolute w-screen h-screen bg-gradient-to-b from-black/40 from-95% to-white/90"></div>
       <div
         style={popt.style}
-        className="w-auto text-white  p-24 rounded-xl flex flex-col gap-5 items-center justify-center h-auto z-10 "
+        className="w-auto text-white  p-24 rounded-xl flex flex-col gap-5 items-center text-center justify-center h-auto z-10 "
       >
-        <h1 className="text-5xl">
+        <h1 className=" text-xl lg:text-6xl">
           Impulsamos la <span className="text-verde">energia</span> del{" "}
           <span className="text-verde">futuro</span> con
         </h1>
-        <h1 className="text-5xl">experiencia lider en OIL & Gas</h1>
-        <p className="text-xl">
+        <h1 className=" text-xl lg:text-6xl">experiencia lider en OIL & Gas</h1>
+        <p className="text-sm lg:text-xl">
           Somos <span className="text-verde">Futuro</span> , Somos{" "}
           <span className="text-verde">Energia</span>
         </p>

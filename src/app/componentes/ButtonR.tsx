@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { pop } from "../fonts/Fonts";
 
-export function Button() {
-  return <button></button>;
-}
-
 export function ButtonR({
   dir,
   texto,
@@ -23,7 +19,7 @@ export function ButtonR({
 
   return (
     <Link
-      className={`${estilos} transition-all text-center p-2 text-white rounded-xl`}
+      className={`${estilos} transition-all text-center text-xs lg:text-sm p-2 text-white rounded-xl`}
       href={`${dir}`}
       style={pop.style}
     >

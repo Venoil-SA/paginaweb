@@ -2,9 +2,10 @@
 import Image from "next/image";
 import { pop } from "../fonts/Fonts";
 import { motion } from "motion/react";
+import ToggleSwitch from "./toggleSwitch";
 export default function Nav() {
   return (
-    <nav className="h-24 w-screen flex justify-around text-white bg-azul p-12">
+    <nav className="h-24 w-screen flex justify-around text-white  border-b-verde bg-azul p-12">
       <div className="w-1/4 flex items-center justify-center">
         <Image
           src="/LOGO HORIZONTAL-02 1.png"
@@ -15,7 +16,7 @@ export default function Nav() {
       </div>
       <div
         style={pop.style}
-        className="w-2/4 h-full flex text-center flex-row items-center text-xl justify-around"
+        className="w-2/4 hidden  h-full  lg:flex text-center flex-row items-center text-base justify-around"
       >
         <motion.a
           initial={{ y: -20, opacity: 0 }}
@@ -55,9 +56,7 @@ export default function Nav() {
         </motion.a>
       </div>
       <div className="w-1/4 flex items-center justify-center">
-        <div className="w-24 h-12 bg-red-500 rounded-xl flex items-center p-2">
-          <div className="w-8 h-8 bg-white rounded-full"></div>
-        </div>
+<ToggleSwitch/>
       </div>
     </nav>
   );
