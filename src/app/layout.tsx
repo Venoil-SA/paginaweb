@@ -21,7 +21,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <div className="bg-blue-950 text-white w-screen h-12 border-t-2 border-white  text-xs flex items-center justify-center">
-          © 2024. Todos los derechos reservados por Venoil S.A
+          ©  {new Date().getFullYear()}. Todos los derechos reservados por Venoil S.A
         </div>
       </body>
     </html>
