@@ -4,7 +4,10 @@ import textos from "@/lib/textos";
 import Image from "next/image";
 export default function Operadora({params}:{params:{id:string}}) {
     let noticia:NoticiaP[] =textos.noticias.filter((e)=>{ return e.id==params.id})
+<<<<<<< HEAD
     console.log(noticia[0])
+=======
+>>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
   return (
     <article className="w-screen flex flex-col gap-12 p-12 lg:p-24 items-center justify-center">
         <header>

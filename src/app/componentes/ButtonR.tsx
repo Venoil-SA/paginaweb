@@ -19,7 +19,11 @@ export function ButtonR({
 
   return (
     <Link
+<<<<<<< HEAD
       className={`${estilos} transition-all text-center text-xs lg:text-sm px-16 py-2 text-white rounded-xl`}
+=======
+      className={`${estilos} transition-all text-center text-xs lg:text-sm p-2 text-white rounded-xl`}
+>>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
       href={`${dir}`}
       style={pop.style}
     >
