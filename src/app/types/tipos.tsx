@@ -9,17 +9,24 @@ export interface Yacimiento {
   nombre: string;
   descripcion: string;
   imagen?: string;
+  last?: boolean;
 }
-
-export interface Noticia {
-  id: number;
+export interface NoticiaP {
+  id: string;
   titulo: string;
-  descripcion: string;
-  imagen?: string;
+  textoF: string;
+  textoS?: string;
+  imgF:string;
+  imgS?:string;
+  fuente?:string;
 }
-
 export interface Valor {
   texto: string;
   imagen: string;
   id: number;
+}
+
+export interface Positionpop {
+  x: number;
+  y: number;
 }
