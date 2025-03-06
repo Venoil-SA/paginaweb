@@ -17,22 +17,22 @@ export default function ToggleSwitch() {
             onClick={toggleSwitch}
         >
             <motion.div
-<<<<<<< HEAD
+
                 className="w-6 h-6 rounded-full bg-white "
-=======
+
                 className="w-6 h-6 text-azul rounded-full bg-white "
->>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
+
                 layout
                 transition={{
                     type: "spring",
                     visualDuration: 0.2,
                     bounce: 0.2,
                 }}
-<<<<<<< HEAD
+
             />
-=======
-            >{`${isOn?"ES":"EN"}`}</motion.div>
->>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
-        </button>
+
+            >{`${isOn ? "ES" : "EN"}`}</motion.div>
+
+        </button >
     )
 }

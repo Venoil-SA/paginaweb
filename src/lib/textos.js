@@ -1,39 +1,81 @@
-const textos ={
-    inicio:{
-            presidente:[
-                "Presidente de VenOil Energía con 23 años en el gerenciamiento de proyectos de gas y petróleo en diferentes campos de Argentina.",
-                "Ocupó diferentes posiciones técnicas, gerenciales y directivas en empresas como Repsol e YPF.",
-                "Su última función directiva estuvo focalizada en los activos del sur de la provincia de Mendoza. Obtuvo diferentes menciones de la alta dirección de ambas empresas, reconociendo sus excelentes resultados.",
-                "Gustavo es Ingeniero Electrónico y completó su formación académica capacitándose en programas de Dirección Ejecutiva (IAE) y de Alta Dirección (UCA). Posee amplia experiencia en producción, tratamiento y transporte de gas & petróleo, gerenciamiento de proyectos, negociación con socios, sindicatos y entes gubernamentales.",
-                "Es Co-fundador de VenOil Energia. Todo esto hace de Gustavo un especialista de excelencia en la gestión de proyectos de Oil & Gas."],
-            valores:["Liderazgo en todas las fases del proyecto","Transparencia en el desempeño","Pasion en cada tarea y nuevo desafío","Respeto por las comunidades y el medio ambiente","Excelencia en todos los niveles de la organización","Integridad como base de todas nuestras decisiones"],
-            campos:{
-                manzano:"El Manzano Oeste, ubicado en el departamento de Malargüe, es uno de los activos más importantes de Venoil Energía en Mendoza. Fue uno de los primeros yacimientos operados por Venoil, y desde aquí se desarrolló el modelo de negocio que la empresa implementa actualmente. Reconocido por la calidad de su petróleo y su ubicación en una región con rica tradición petrolera, este yacimiento contribuye significativamente al desarrollo económico del sur mendocino. Venoil implementa métodos avanzados de explotación y mantiene un compromiso firme con las comunidades locales, asegurando que la operación en El Manzano Oeste sea un ejemplo de gestión responsable y sostenible, mientras impulsa el crecimiento de Malargüe como un polo petrolero destacado.",
-                piedrascoloradas:"El yacimiento Piedras Coloradas, ubicado en la provincia de Mendoza, es una de las operaciones destacadas de Venoil Energía en la región. Recientemente adquirido por la empresa, este yacimiento es reconocido por su producción de petróleo convencional y es un motor económico clave para las comunidades cercanas. Con la implementación de técnicas modernas de extracción y una gestión alineada con las normas ISO 9001, 14001 y 45001, Venoil asegura que las operaciones de Piedras Coloradas sean sostenibles y generen empleo directo e indirecto, fortaleciendo la economía de Mendoza.",
-                cacheuta:"Situado en una zona estratégica de Mendoza, el yacimiento Cacheuta, recientemente adquirido por Venoil Energía, es un hito histórico para la industria hidrocarburífera de la región y del país. Este yacimiento fue uno de los primeros en ser explotados a gran escala en Argentina, marcando el inicio de una era de desarrollo energético en el territorio nacional. Su legado trasciende generaciones, y hoy, gracias a la incorporación de tecnologías modernas, sigue siendo una fuente clave de energía y empleo, consolidando su papel como un referente en la historia petrolera de Mendoza y del país.",
-                chimenaike:"Chimen Aike, gestionado por Venoil Energía, se encuentra cerca de Río Gallegos y representa un importante activo para la empresa y la provincia. Este yacimiento cuenta con gran potencial en la producción de gas natural y está siendo evaluado para el desarrollo de recursos no convencionales. La operación de Chimen Aike no solo contribuye al crecimiento económico local, sino que también posiciona a Santa Cruz como un referente energético clave para el futuro.",
-                canadonsalto:"Operado por Venoil Energía, Cañadón Salto es un yacimiento ubicado en una de las áreas más remotas del sur de Santa Cruz. Se caracteriza por la extracción de petróleo liviano y gas natural, utilizando tecnologías de recuperación secundaria para optimizar su producción. Este yacimiento es fundamental para la provincia, ya que genera recursos económicos, empleo y estabilidad energética, consolidando el compromiso de Venoil con el desarrollo sostenible de la región.",
-                maggie:"En el corazón del corredor petrolero central de Santa Cruz, Estancia La Maggie destaca como un yacimiento estratégico de Venoil Energía. Con una producción mixta de petróleo de alta calidad y gas natural, este yacimiento es una fuente importante de recursos para la provincia. A pesar de los desafíos logísticos y climáticos de la región, Venoil ha implementado soluciones efectivas que permiten maximizar el potencial de este activo, generando empleo y contribuyendo al desarrollo económico de las comunidades cercanas.",
-                condor:"Ubicado cerca de Río Gallegos, el yacimiento El Cóndor, operado por Venoil Energía, es una pieza clave en la Cuenca Austral. Este yacimiento produce principalmente gas natural, complementado con reservas de petróleo. Su importancia radica en su capacidad para abastecer de energía a la región, conectando su producción con el Gasoducto San Martín. Gracias a la infraestructura de plantas de tratamiento y al uso de tecnologías modernas, El Cóndor no solo genera empleo y desarrollo económico, sino que también asegura un suministro confiable de energía para Santa Cruz y más allá."
-            }
+const textos = {
+  inicio: {
+    presidente: [
+      "Presidente de VenOil Energía con 23 años en el gerenciamiento de proyectos de gas y petróleo en diferentes campos de Argentina.",
+      "Ocupó diferentes posiciones técnicas, gerenciales y directivas en empresas como Repsol e YPF.",
+      "Su última función directiva estuvo focalizada en los activos del sur de la provincia de Mendoza. Obtuvo diferentes menciones de la alta dirección de ambas empresas, reconociendo sus excelentes resultados.",
+      "Gustavo es Ingeniero Electrónico y completó su formación académica capacitándose en programas de Dirección Ejecutiva (IAE) y de Alta Dirección (UCA). Posee amplia experiencia en producción, tratamiento y transporte de gas & petróleo, gerenciamiento de proyectos, negociación con socios, sindicatos y entes gubernamentales.",
+      "Es Co-fundador de VenOil Energia. Todo esto hace de Gustavo un especialista de excelencia en la gestión de proyectos de Oil & Gas.",
+    ],
+    valores: [
+      "Liderazgo en todas las fases del proyecto",
+      "Transparencia en el desempeño",
+      "Pasion en cada tarea y nuevo desafío",
+      "Respeto por las comunidades y el medio ambiente",
+      "Excelencia en todos los niveles de la organización",
+      "Integridad como base de todas nuestras decisiones",
+    ],
+    campos: {
+      manzano:
+        "El Manzano Oeste, ubicado en el departamento de Malargüe, es uno de los activos más importantes de Venoil Energía en Mendoza. Fue uno de los primeros yacimientos operados por Venoil, y desde aquí se desarrolló el modelo de negocio que la empresa implementa actualmente. Reconocido por la calidad de su petróleo y su ubicación en una región con rica tradición petrolera, este yacimiento contribuye significativamente al desarrollo económico del sur mendocino. Venoil implementa métodos avanzados de explotación y mantiene un compromiso firme con las comunidades locales, asegurando que la operación en El Manzano Oeste sea un ejemplo de gestión responsable y sostenible, mientras impulsa el crecimiento de Malargüe como un polo petrolero destacado.",
+      piedrascoloradas:
+        "El yacimiento Piedras Coloradas, ubicado en la provincia de Mendoza, es una de las operaciones destacadas de Venoil Energía en la región. Recientemente adquirido por la empresa, este yacimiento es reconocido por su producción de petróleo convencional y es un motor económico clave para las comunidades cercanas. Con la implementación de técnicas modernas de extracción y una gestión alineada con las normas ISO 9001, 14001 y 45001, Venoil asegura que las operaciones de Piedras Coloradas sean sostenibles y generen empleo directo e indirecto, fortaleciendo la economía de Mendoza.",
+      cacheuta:
+        "Situado en una zona estratégica de Mendoza, el yacimiento Cacheuta, recientemente adquirido por Venoil Energía, es un hito histórico para la industria hidrocarburífera de la región y del país. Este yacimiento fue uno de los primeros en ser explotados a gran escala en Argentina, marcando el inicio de una era de desarrollo energético en el territorio nacional. Su legado trasciende generaciones, y hoy, gracias a la incorporación de tecnologías modernas, sigue siendo una fuente clave de energía y empleo, consolidando su papel como un referente en la historia petrolera de Mendoza y del país.",
+      chimenaike:
+        "Chimen Aike, gestionado por Venoil Energía, se encuentra cerca de Río Gallegos y representa un importante activo para la empresa y la provincia. Este yacimiento cuenta con gran potencial en la producción de gas natural y está siendo evaluado para el desarrollo de recursos no convencionales. La operación de Chimen Aike no solo contribuye al crecimiento económico local, sino que también posiciona a Santa Cruz como un referente energético clave para el futuro.",
+      canadonsalto:
+        "Operado por Venoil Energía, Cañadón Salto es un yacimiento ubicado en una de las áreas más remotas del sur de Santa Cruz. Se caracteriza por la extracción de petróleo liviano y gas natural, utilizando tecnologías de recuperación secundaria para optimizar su producción. Este yacimiento es fundamental para la provincia, ya que genera recursos económicos, empleo y estabilidad energética, consolidando el compromiso de Venoil con el desarrollo sostenible de la región.",
+      maggie:
+        "En el corazón del corredor petrolero central de Santa Cruz, Estancia La Maggie destaca como un yacimiento estratégico de Venoil Energía. Con una producción mixta de petróleo de alta calidad y gas natural, este yacimiento es una fuente importante de recursos para la provincia. A pesar de los desafíos logísticos y climáticos de la región, Venoil ha implementado soluciones efectivas que permiten maximizar el potencial de este activo, generando empleo y contribuyendo al desarrollo económico de las comunidades cercanas.",
+      condor:
+        "Ubicado cerca de Río Gallegos, el yacimiento El Cóndor, operado por Venoil Energía, es una pieza clave en la Cuenca Austral. Este yacimiento produce principalmente gas natural, complementado con reservas de petróleo. Su importancia radica en su capacidad para abastecer de energía a la región, conectando su producción con el Gasoducto San Martín. Gracias a la infraestructura de plantas de tratamiento y al uso de tecnologías modernas, El Cóndor no solo genera empleo y desarrollo económico, sino que también asegura un suministro confiable de energía para Santa Cruz y más allá.",
     },
-    gestionintegrada:{
-<<<<<<< HEAD
-        principios:["ISO 9001 - Gestión de la Calidad: Esta norma asegura que nuestros procesos estén diseñados para cumplir consistentemente con las expectativas de nuestros clientes,mejorando la eficiencia y fomentando la mejora continua.","ISO 14001 - Gestión Ambiental: Comprometidos con elcuidado del medio ambiente, implementamos esta norma para gestionar de manera responsable los impactos ambientales de nuestras actividades, promoviendo prácticas sostenibles y respetuosas con el entorno.","ISO 45001 - Gestión de la Seguridad y Salud en el Trabajo:Garantizamos la seguridad y el bienestar de nuestros empleados y colaboradores a través de sistemas que identifican, controlan y reducen los riesgos en el entorno laboral","Vigilamos cada detalle para garantizar la seguridad en todas nuestras operaciones."],
-=======
-        cenfoques:["verde","azul","verde","azul","verde","azul"],
-        lenfoques:["V","E","N","O","I","L"],
-        enfoques:["Evaluación de Riesgos de Seguridad","Adopción de Medidas de Mitigación","Trabajos en Altura y en Espacios Confinados","Izaje de Cargas","Manejo Defensivo","Medio Ambiente"],
-        principiosT:["ISO 9001 - Gestión de la calidad","ISO 14001 - Gestión Ambiental","ISO 45001 - Gestión de la Seguridad y Salud en el Trabajo"],
-        principios:["Esta norma asegura que nuestros procesos estén diseñados para cumplir consistentemente con las expectativas de nuestros clientes,mejorando la eficiencia y fomentando la mejora continua.","Comprometidos con elcuidado del medio ambiente, implementamos esta norma para gestionar de manera responsable los impactos ambientales de nuestras actividades, promoviendo prácticas sostenibles y respetuosas con el entorno.","Garantizamos la seguridad y el bienestar de nuestros empleados y colaboradores a través de sistemas que identifican, controlan y reducen los riesgos en el entorno laboral","Vigilamos cada detalle para garantizar la seguridad en todas nuestras operaciones."],
->>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
-        gestion:["Establecemos estándares que protegen a nuestro equipo, las comunidades y el medio ambiente.","Nos comprometemos a prevenir riesgos mediante una gestión proactiva y responsable.","Optimizamos nuestros procesos para garantizar operaciones seguras y eficientes.","Innovamos constantemente en tecnologías que priorizan la seguridad en campo.","Lideramos con el ejemplo, promoviendo una cultura de seguridad en cada proyecto."]
-    },
-    noticias:[
-        {
-            id:'1',
-            titulo:"CGC acuerda con VenOil Energía la cesión de Piedras Coloradas y Cacheuta con inversiones para revitalizar ambas áreas",
-            textoF:`Alcanzaron un acuerdo preliminar mediante el cual la Compañía General de Combustibles (CGC) cederá las operaciones de las áreas, ubicadas en la Cuenca Cuyana, a la mendocina VenOil, que se compromete a realizar inversiones para revitalizar los yacimientos maduros. Ya se envió la solicitud al Gobierno de Mendoza.
+  },
+  gestionintegrada: {
+    principios: [
+      "ISO 9001 - Gestión de la Calidad: Esta norma asegura que nuestros procesos estén diseñados para cumplir consistentemente con las expectativas de nuestros clientes,mejorando la eficiencia y fomentando la mejora continua.",
+      "ISO 14001 - Gestión Ambiental: Comprometidos con elcuidado del medio ambiente, implementamos esta norma para gestionar de manera responsable los impactos ambientales de nuestras actividades, promoviendo prácticas sostenibles y respetuosas con el entorno.",
+      "ISO 45001 - Gestión de la Seguridad y Salud en el Trabajo:Garantizamos la seguridad y el bienestar de nuestros empleados y colaboradores a través de sistemas que identifican, controlan y reducen los riesgos en el entorno laboral",
+      "Vigilamos cada detalle para garantizar la seguridad en todas nuestras operaciones.",
+    ],
+
+    cenfoques: ["verde", "azul", "verde", "azul", "verde", "azul"],
+    lenfoques: ["V", "E", "N", "O", "I", "L"],
+    enfoques: [
+      "Evaluación de Riesgos de Seguridad",
+      "Adopción de Medidas de Mitigación",
+      "Trabajos en Altura y en Espacios Confinados",
+      "Izaje de Cargas",
+      "Manejo Defensivo",
+      "Medio Ambiente",
+    ],
+    principiosT: [
+      "ISO 9001 - Gestión de la calidad",
+      "ISO 14001 - Gestión Ambiental",
+      "ISO 45001 - Gestión de la Seguridad y Salud en el Trabajo",
+    ],
+    principios: [
+      "Esta norma asegura que nuestros procesos estén diseñados para cumplir consistentemente con las expectativas de nuestros clientes,mejorando la eficiencia y fomentando la mejora continua.",
+      "Comprometidos con elcuidado del medio ambiente, implementamos esta norma para gestionar de manera responsable los impactos ambientales de nuestras actividades, promoviendo prácticas sostenibles y respetuosas con el entorno.",
+      "Garantizamos la seguridad y el bienestar de nuestros empleados y colaboradores a través de sistemas que identifican, controlan y reducen los riesgos en el entorno laboral",
+      "Vigilamos cada detalle para garantizar la seguridad en todas nuestras operaciones.",
+    ],
+
+    gestion: [
+      "Establecemos estándares que protegen a nuestro equipo, las comunidades y el medio ambiente.",
+      "Nos comprometemos a prevenir riesgos mediante una gestión proactiva y responsable.",
+      "Optimizamos nuestros procesos para garantizar operaciones seguras y eficientes.",
+      "Innovamos constantemente en tecnologías que priorizan la seguridad en campo.",
+      "Lideramos con el ejemplo, promoviendo una cultura de seguridad en cada proyecto.",
+    ],
+  },
+  noticias: [
+    {
+      id: "1",
+      titulo:
+        "CGC acuerda con VenOil Energía la cesión de Piedras Coloradas y Cacheuta con inversiones para revitalizar ambas áreas",
+      textoF: `Alcanzaron un acuerdo preliminar mediante el cual la Compañía General de Combustibles (CGC) cederá las operaciones de las áreas, ubicadas en la Cuenca Cuyana, a la mendocina VenOil, que se compromete a realizar inversiones para revitalizar los yacimientos maduros. Ya se envió la solicitud al Gobierno de Mendoza.
 Mendoza sigue dando pasos firmes para incrementar su actividad hidrocarburífera y mantener en producción las áreas maduras: la Compañía General de Combustibles (CGC) llegó a un acuerdo preliminar para ceder las operaciones de las áreas Piedras Coloradas y Cacheuta a VenOil y ya solicitó el permiso formal al Gobierno de Mendoza, que debe autorizar por decreto.
 
 Estos acuerdos, por los que empresas más pequeñas se hacen cargo de áreas maduras en las que aún se puede producir, permiten revitalizar campos maduros, incrementar la producción, atraer nuevas inversiones y generar impacto económico positivo en las comunidades mendocinas.
@@ -45,7 +87,7 @@ Estos acuerdos, por los que empresas más pequeñas se hacen cargo de áreas mad
 “Este entendimiento es parte de un proceso natural en la industria de hidrocarburos en Argentina, donde las grandes empresas están ajustando su enfoque hacia activos de mayor interés estratégico, abriendo oportunidades para que empresas más pequeñas asuman la operación de áreas consideradas marginales por las grandes operadoras”, amplió.
 
 “Lo más importante es que existe una transformación de la cadena de valor hacia una mayor eficiencia, menores costos y prolongación de la explotación de estos recursos en el tiempo”, agregó Sánchez Bandini.`,
-            textoS:`Una tendencia en alza
+      textoS: `Una tendencia en alza
 
             Un ejemplo de esta tendencia es el Proyecto Andes de YPF. La empresa concentra su esfuerzo en activos estratégicos como Vaca Muerta en Neuquén, mientras transfiere áreas convencionales a operadores especializados. Este modelo busca optimizar la producción y revitalizar campos maduros mediante inversiones focalizadas y planes de desarrollo sostenibles.
             
@@ -66,13 +108,15 @@ Estos acuerdos, por los que empresas más pequeñas se hacen cargo de áreas mad
             Acerca de Compañía General de Combustibles (CGC)
             
             CGC es una empresa argentina de energía dedicada a la exploración, producción, distribución de hidrocarburos y transporte de gas. Desde hace más de 100 años, está comprometida con crear valor de manera sustentable para las comunidades, sus colaboradores, proveedores, accionistas y clientes.`,
-            imgF:"/petróleo-mendoza.jpg",
-            imgS:"/image1.png",
-            fuente:"https://www.mendoza.gov.ar/prensa/cgc-acuerda-con-venoil-energia-la-cesion-de-piedras-coloradas-y-cacheuta-con-inversiones-para-revitalizar-ambas-areas/"
-        },        {
-            id:'2',
-            titulo:"Mendoza continúa potenciando inversiones en el sector petrolero",
-            textoF:`Con la exitosa intervención de pulling que se realizó en los pozos petroleros del área Vega Grande a través del programa Mendoza Activa, la provincia genera nuevas oportunidades de inversión y de empleo.
+      imgF: "/petróleo-mendoza.jpg",
+      imgS: "/image1.png",
+      fuente:
+        "https://www.mendoza.gov.ar/prensa/cgc-acuerda-con-venoil-energia-la-cesion-de-piedras-coloradas-y-cacheuta-con-inversiones-para-revitalizar-ambas-areas/",
+    },
+    {
+      id: "2",
+      titulo: "Mendoza continúa potenciando inversiones en el sector petrolero",
+      textoF: `Con la exitosa intervención de pulling que se realizó en los pozos petroleros del área Vega Grande a través del programa Mendoza Activa, la provincia genera nuevas oportunidades de inversión y de empleo.
 Emesa, junto a las pymes locales Jet Oil Tecnology y VenOil Energía, realiza trabajos de recuperación y mejoramiento del yaciminento Vega Grande, ubicado al sur de San Rafael y considerado el área petrolera más alta sobre el nivel del mar de la Argentina.  
 
 En concreto, las empresas contrataron un equipo de pulling pesado con el primer objetivo de intervenir el Pozo VG.x-1, que había quedado fuera de producción. “Este yacimiento estaba parado desde hace dos años y medio y con la entrada de la concesión de Emesa y otras dos pymes locales hoy está operativo y con un plan de inversión interesante”, explicó Estanislao Schilardi, director de Hidrocarburos.
@@ -83,14 +127,15 @@ A la recuperación de las instalaciones iniciadas hace seis meses, las empresas 
 
 “Para Emesa esto implica un hito, considerando que es la primera vez que lleva un equipo de torre a este yacimiento luego de la puesta en marcha y que cumple con el compromiso presentado en Mendoza Activa 1”, explicaron desde la compañía presidida por Pablo Magistocchi.
 
-La sinergia con VenOil Energía, pyme que desarrolla proyectos energéticos con amplio background en la industria del oil & gas en cuencas petroleras de Argentina y Latinoamérica, y con Jet Oil Tecnology, dedicada a la creación de tecnología y prestación de servicios en la industria del petróleo y gas, potencia la industria mendocina, ya que ambas firmas están radicadas en el departamento de San Rafael.`,            
-            textoS:"",
-            imgF:"/Emesa-Vega-Grande-7-1536x1026.jpg",
-            imgS:"/Emesa-Vega-Grande-4.jpg",
-            fuente:"https://www.mendoza.gov.ar/prensa/mendoza-continua-potenciando-inversiones-en-el-sector-petrolero/"
-        }
-    ]
-}
+La sinergia con VenOil Energía, pyme que desarrolla proyectos energéticos con amplio background en la industria del oil & gas en cuencas petroleras de Argentina y Latinoamérica, y con Jet Oil Tecnology, dedicada a la creación de tecnología y prestación de servicios en la industria del petróleo y gas, potencia la industria mendocina, ya que ambas firmas están radicadas en el departamento de San Rafael.`,
+      textoS: "",
+      imgF: "/Emesa-Vega-Grande-7-1536x1026.jpg",
+      imgS: "/Emesa-Vega-Grande-4.jpg",
+      fuente:
+        "https://www.mendoza.gov.ar/prensa/mendoza-continua-potenciando-inversiones-en-el-sector-petrolero/",
+    },
+  ],
+};
 
 //export const textosEn ={
 //    inicio: {

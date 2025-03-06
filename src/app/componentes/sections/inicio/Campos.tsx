@@ -14,21 +14,21 @@ export default function Campos() {
       id: 2,
       nombre: "Chimenaike",
       descripcion: campos.chimenaike,
-<<<<<<< HEAD
+
       imagen: "/image 2.png",
-=======
+
       imagen: "/chimen.HEIC",
->>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
+
     },
     {
       id: 3,
       nombre: "Condor",
       descripcion: campos.condor,
-<<<<<<< HEAD
+
       imagen: "/image 2.png",
-=======
+
       imagen: "/1737451360116.jpeg",
->>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
+
     },
     {
       id: 4,
@@ -52,11 +52,11 @@ export default function Campos() {
       id: 7,
       nombre: "Estancia La Maggie",
       descripcion: campos.maggie,
-<<<<<<< HEAD
+
       imagen: "/image 2.png",
-=======
+
       imagen: "/condor.jpeg",
->>>>>>> 76031e9def9177f29d8736de0f542ad8bc949955
+
     },
   ];
   return (
