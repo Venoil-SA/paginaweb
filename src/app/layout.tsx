@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "./componentes/Nav";
 import Footer from "./componentes/Footer";
-import { mont, pop } from "./fonts/Fonts";
+import {  pop } from "./fonts/Fonts";
 
 export const metadata: Metadata = {
   title: "Venoil Energia",
@@ -21,7 +21,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <div className="bg-blue-950 text-white w-screen h-12 border-t-2 border-white  text-xs flex items-center justify-center">
-          ©  {new Date().getFullYear()}. Todos los derechos reservados por Venoil S.A
+          © 2024. Todos los derechos reservados por Venoil S.A
         </div>
       </body>
     </html>

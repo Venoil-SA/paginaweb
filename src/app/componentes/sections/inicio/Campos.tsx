@@ -8,55 +8,43 @@ export default function Campos() {
       id: 1,
       nombre: "El Manzano",
       descripcion: campos.manzano,
-      imagen: "/image 2.png",
+      imagen: "/Emesa-Vega-Grande-4.jpg",
     },
     {
       id: 2,
-      nombre: "Chimenaike",
-      descripcion: campos.chimenaike,
-
-      imagen: "/image 2.png",
-
-      imagen: "/chimen.HEIC",
-
+      nombre: "Piedras Coloradas",
+      descripcion: campos.piedrascoloradas,
+      imagen: "/image.png",
     },
     {
       id: 3,
-      nombre: "Condor",
-      descripcion: campos.condor,
-
-      imagen: "/image 2.png",
-
-      imagen: "/1737451360116.jpeg",
-
+      nombre: "Cacheuta",
+      descripcion: campos.cacheuta,
+      imagen: "/ayb.jpg",
     },
     {
       id: 4,
-      nombre: "Cañadon Salto",
-      descripcion: campos.canadonsalto,
-      imagen: "/image 2.png",
+      nombre: "Chimenaike",
+      descripcion: campos.chimenaike,
+      imagen: "/chimenaike.png",
     },
     {
       id: 5,
-      nombre: "Piedras Coloradas",
-      descripcion: campos.piedrascoloradas,
-      imagen: "/image 2.png",
+      nombre: "Condor",
+      descripcion: campos.condor,
+      imagen: "/1737451360116.jpeg",
     },
     {
       id: 6,
-      nombre: "Cacheuta",
-      descripcion: campos.cacheuta,
-      imagen: "/image 2.png",
+      nombre: "Cañadon Salto",
+      descripcion: campos.canadonsalto,
+      imagen: "/truck2.png",
     },
     {
       id: 7,
       nombre: "Estancia La Maggie",
       descripcion: campos.maggie,
-
-      imagen: "/image 2.png",
-
       imagen: "/condor.jpeg",
-
     },
   ];
   return (
