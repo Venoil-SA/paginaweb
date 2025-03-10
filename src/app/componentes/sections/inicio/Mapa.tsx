@@ -3,7 +3,7 @@ import InteractMap from "../../InteractMap";
 
 export default function Mapa() {
   return (
-    <section className="p-4">
+    <section className="p-4 bg-gray-50">
       <div className="flex items-center justify-center gap-20">
         <InteractMap />
 

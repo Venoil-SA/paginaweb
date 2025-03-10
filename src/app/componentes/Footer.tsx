@@ -65,16 +65,16 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-4 text-center md:text-left">Redes Sociales</h2>
           <div className="flex gap-4 justify-center md:justify-start">
-            <a href="https://www.instagram.com/Venoil_Energia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://www.instagram.com/venoilenergia_na" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialInstagram />
             </a>
-            <a href="https://www.facebook.com/Venoil_Energia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://www.facebook.com/venoilenergia#" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialFacebook />
             </a>
-            <a href="https://www.linkedin.com/company/Venoil_Energia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://www.linkedin.com/in/venoil-energ%C3%ADa-b83546169/" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialLinkedin />
             </a>
-            <a href="https://twitter.com/Venoil_Energia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://x.com/venoilenergia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialTwitter />
             </a>
           </div>
