@@ -5,12 +5,14 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import textos from "@/lib/textos"
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Acordion(){
-  const print=textos.gestionintegrada.principiosT
-  const printextos=textos.gestionintegrada.principios
+  const { language } = useLanguage();
+  const print=textos[language].gestionintegrada.principiosT
+  const printextos=textos[language].gestionintegrada.principios
     return(
-        <div>
+        <div className="text-white">
             <Accordion type="single" collapsible>
               {print.map((text,id)=>{
                 return(

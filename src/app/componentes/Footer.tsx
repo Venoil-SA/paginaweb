@@ -12,7 +12,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-azul text-white w-full py-12 px-4 md:px-24">
+    <footer className="bg-azul text-white border-t-2 border-t-white w-full py-12 px-4 md:px-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex flex-col items-center justify-center md:items-start">
           <Image
@@ -33,10 +33,10 @@ export default function Footer() {
             <Link href="/operadora" className="flex items-center gap-2 hover:text-verde transition-colors">
               <FaAngleRight  /> <span>Operadora</span>
             </Link>
-            <Link href="/gestion-integrada" className="flex items-center gap-2 hover:text-verde transition-colors">
+            <Link href="/gestion" className="flex items-center gap-2 hover:text-verde transition-colors">
               <FaAngleRight  /> <span>Gestión Integrada</span>
             </Link>
-            <Link href="/trabaja-con-nosotros" className="flex items-center gap-2 hover:text-verde transition-colors">
+            <Link href="/workWithUs" className="flex items-center gap-2 hover:text-verde transition-colors">
               <FaAngleRight  /> <span>Trabaja con nosotros</span>
             </Link>
           </nav>
@@ -46,7 +46,7 @@ export default function Footer() {
           <h2 className="text-xl font-bold mb-4 text-center md:text-left">Nuestro Contacto</h2>
           <div className="flex flex-col gap-2 text-sm">
             <p className="flex items-center gap-2">
-              <FaPhoneAlt size={18}/> <span>+54 263 4782743</span>
+              <FaPhoneAlt size={18}/> <span>+54 9 261 264-5614</span>
             </p>
             <p className="flex items-start gap-2">
               <FaLocationDot size={18} className="mt-4" />
@@ -65,16 +65,16 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-4 text-center md:text-left">Redes Sociales</h2>
           <div className="flex gap-4 justify-center md:justify-start">
-            <a href="https://www.instagram.com/venoilenergia_na" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://www.instagram.com/venoilenergia_na/" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialInstagram />
             </a>
-            <a href="https://www.facebook.com/venoilenergia#" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://www.facebook.com/Venoil_Energia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialFacebook />
             </a>
-            <a href="https://www.linkedin.com/in/venoil-energ%C3%ADa-b83546169/" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://www.linkedin.com/company/venoil-energia/" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialLinkedin />
             </a>
-            <a href="https://x.com/venoilenergia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
+            <a href="https://twitter.com/Venoil_Energia" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-verde transition-all duration-300 transform hover:scale-110 hover:rotate-6">
               <SlSocialTwitter />
             </a>
           </div>

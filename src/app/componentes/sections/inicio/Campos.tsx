@@ -1,55 +1,66 @@
+import { popt } from "@/app/fonts/Fonts";
 import CardYac from "../../CardYac";
 import { Yacimiento } from "@/app/types/tipos";
 import textos from "@/lib/textos";
+import { useLanguage } from "@/app/context/LanguageContext";
 export default function Campos() {
-  const campos = textos.inicio.campos;
+  const { language } = useLanguage();
+  const campos = textos[language].inicio.campos;
   const cards: Yacimiento[] = [
     {
       id: 1,
-      nombre: "El Manzano",
+      nombre: "Manzano Oeste",
       descripcion: campos.manzano,
-      imagen: "/Emesa-Vega-Grande-4.jpg",
+      imagen: "/imagendecampoeditada.png",
+      direc:"manzano"
     },
     {
       id: 2,
       nombre: "Piedras Coloradas",
       descripcion: campos.piedrascoloradas,
-      imagen: "/image.png",
+      imagen: "/DJI_0010.jpg",
+      direc:"piedras"
     },
     {
       id: 3,
       nombre: "Cacheuta",
       descripcion: campos.cacheuta,
-      imagen: "/ayb.jpg",
+      imagen: "/pozo84.jpg",
+      direc:"cacheuta"
     },
     {
       id: 4,
-      nombre: "Chimenaike",
+      nombre: "Chimen aike",
       descripcion: campos.chimenaike,
-      imagen: "/chimenaike.png",
+      imagen: "/chimenaike.jpg",
+      direc:"chimenaike"
     },
     {
       id: 5,
-      nombre: "Condor",
+      nombre: "Cóndor",
       descripcion: campos.condor,
-      imagen: "/1737451360116.jpeg",
+      imagen: "/1737451360116.jpg",
+      direc:"condor"
     },
     {
       id: 6,
       nombre: "Cañadon Salto",
       descripcion: campos.canadonsalto,
-      imagen: "/truck2.png",
+      imagen: "/truck2.jpg",
+      direc:"salto"
     },
     {
       id: 7,
       nombre: "Estancia La Maggie",
       descripcion: campos.maggie,
-      imagen: "/condor.jpeg",
+      imagen: "/ELMTan.png",
+      direc:"maggie"
     },
   ];
   return (
-    <section className="w-screen h-auto flex items-center justify-center p-2 lg:p-24 gap-2 lg:gap-5 bg-white">
-      <div className="grid grid-cols-2 lg:grid-cols-3 w-full h-auto gap-2 lg:gap-5">
+    <section className="w-screen h-auto flex flex-col bg-azul items-center justify-center p-2 lg:p-24 gap-2 lg:gap-5 ">
+      <h1 className=" text-xl lg:text-4xl text-verde mb-12" style={popt.style}>Campos Operados</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-3 w-full h-auto gap-12 lg:gap-5">
         {cards.map((y, index) => {
           const isLastRowSingle =
             cards.length % 3 === 1 && index === cards.length - 1;
@@ -61,6 +72,7 @@ export default function Campos() {
               descripcion={y.descripcion}
               imagen={y.imagen}
               last={isLastRowSingle}
+              direc={y.direc}
             />
           );
         })}

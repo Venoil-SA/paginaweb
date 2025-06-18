@@ -1,36 +1,37 @@
+import { useLanguage } from "@/app/context/LanguageContext";
 import { popt } from "@/app/fonts/Fonts";
+import textos from "@/lib/textos";
 
 export default function Pilares() {
+  const { language } = useLanguage();
+  const campos = textos[language].operadora.pilares;
   const pilares = [
     {
       id: 1,
-      descripcion:
-        "Estrategia integral: Analizamos cada yacimiento en profundidad para extender su vida útil y generar nuevas oportunidades a bajo costo.",
+      descripcion:campos.descripcionP,
       imagen: "/Anotación 2024-12-17 2146201.png",
-      color:"border-azul"
+      color:"border-green-900"
     },
     {
       id: 2,
-      descripcion:
-        "Compromiso con la confianza: Operamos con integridad y transparencia, construyendo relaciones sólidas con nuestros socios, clientes y comunidades.",
+      descripcion:campos.descripcionS,
       imagen: "/Bar-Graph--Streamline-Atlas.png",
-      color:"border-t-azul border-b-verde border-l-azul border-r-verde "
+      color:"border-t-green-900 border-b-verde border-l-green-900 border-r-verde "
     },
     {
       id: 3,
-      descripcion:
-        "Excelencia operacional: Creemos que la excelencia es la clave para garantizar una rentabilidad sostenible y un impacto positivo en la industria.",
+      descripcion:campos.descripcionT,
       imagen: "/Leaf--Streamline-Atlas.png",
       color:"border-verde"
     },{
         id: 4,
-        descripcion:"VenOil Energía se encuentra inscripta como empresa operadora en el Registro de Empresas Petroleras de la Secretaría de Energía de la Nación Argentina, bajo el Número 490.",
-        color:"border-t-verde border-b-azul border-l-verde border-r-azul"
+        descripcion:campos.descripcionC,
+        color:"border-t-verde border-b-green-900 border-l-verde border-r-green-900"
       },
   ];
   return (
     <div className="w-screen flex flex-col gap-8 items-center justify-center p-2 lg:p-24">
-      <h1 className=" text-lg lg:text-6xl text-verde" style={popt.style}>
+      <h1 className=" text-lg lg:text-4xl text-verde" style={popt.style}>
         Nuestros Pilares
       </h1>
       {pilares.map((pilar, id) => {
@@ -43,7 +44,7 @@ export default function Pilares() {
               className={` bg-cover bg-center w-8 h-8 lg:w-32 lg:h-20 rounded-xl`}
               style={{ backgroundImage: `url("${pilar.imagen}")` }}
             ></div>
-            <p>{pilar.descripcion}</p>
+            <p className="text-lg text-white text-justify">{pilar.descripcion}</p>
           </div>
         );
       })}
