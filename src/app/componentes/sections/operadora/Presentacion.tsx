@@ -26,7 +26,7 @@ export default function Presentacion() {
           {language=='en'?'We specialize in process optimization and sustainable value generation, with a particular focus on revitalizing and maximizing the performance of mature fields by applying innovative technologies and advanced management strategies.':'Nos especializamos en la optimización de procesos y en la generación de valor sostenible, con un enfoque particular en la revitalización y maximización del rendimiento de campos maduros, aplicando tecnologías innovadoras y estrategias de gestión avanzadas.'}
         </p>
         <div
-          className={`rounded-xl bg-[url("/ayb.jpg")] bg-cover aspect-square w-1/2 h-full flex items-end justify-center flex-col bg-no-repeat bg-center`}
+          className={`rounded-xl bg-[url("/MCAIB.jpg")] bg-cover aspect-square w-1/2 h-full flex items-end justify-center flex-col bg-no-repeat bg-center`}
         >
           <div className=" lg:w-40 lg:h-16 w-16 h-6 bg-verde mr-1 shadow-[rgba(0,_0,_0,_0.8)_0px_9px_20px] bottom-10 z-10 relative left-8 lg:left-10 flex items-center lg:bottom-20">
             <img className="lg:w-12 lg:h-12 w-6 h-6" src="isotipo.png"></img>

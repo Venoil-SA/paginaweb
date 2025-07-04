@@ -1,7 +1,6 @@
 import { useLanguage } from "@/app/context/LanguageContext";
 import { ButtonR } from "../../ButtonR";
 import Image from "next/image";
-import LogoScroller from "../../HorizontalScroll";
 
 export default function Enlace() {
   const { language, toggleLanguage } = useLanguage();
@@ -20,9 +19,6 @@ export default function Enlace() {
         <a href="/gestion" className="text-xs font-semibold border-2 border-white rounded-full py-2 px-4 hover:bg-white hover:text-black transition duration-300 transform hover:scale-105 shadow-md">
           {language=='en'?'INTEGRATED MANAGEMENT':'GESTIÓN INTEGRADA'}
         </a>
-      </section>
-      <section className="w-screen h-auto bg-gradient-to-r overflow-hidden from-verde to-azul">
-        <LogoScroller/>
       </section>
       <section className={`w-auto bg-fixed bg-[url("/image1.png")] bg-cover `}>
         <div className="bg-white/80 w-screen h-full flex   lg:flex-row p-4 lg:p-24 ">
