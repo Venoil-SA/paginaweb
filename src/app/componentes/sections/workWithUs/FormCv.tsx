@@ -1,7 +1,8 @@
 'use client'
-import { useState } from "react";
+import { useState , MouseEvent } from "react";
 import { handleForm } from "./action";
-
+import * as motion from "motion/react-client";
+import { GiCancel } from "react-icons/gi";
 export default function FormCV() {
   const [enviado,NoEnviado] = useState('invisible')
   return (
@@ -48,6 +49,7 @@ export default function FormCV() {
       <button
         type="submit"
         onClick={()=>{
+          
           NoEnviado('visible')
         }}
         className="relative px-6 py-2 transition-all bg-azul hover:bg-white rounded-full mt-4 overflow-hidden border-2 border-verde"
@@ -56,7 +58,15 @@ export default function FormCV() {
           Enviar curriculum
         </span>
       </button>
-      <p className={`${enviado} text-center`}>Su curriculum fue enviado con éxito</p>
+      <div className={`w-screen h-screen fixed bottom-0 ${enviado} left-0 flex items-center justify-center bg-black/50 rounded-xl`}>
+      <motion.div layout initial={{}} whileInView={{}}  transition={{duration:2}} className={`w-auto h-auto flex items-center flex-col bg-verde rounded-xl`} >
+        <button className=" w-full flex justify-end p-2" onClick={()=>{
+          NoEnviado('invisible')
+        }}><GiCancel/></button>
+        <p className="p-2">¡Muchas Gracias!</p>
+        <p className="p-2">Su curriculum fue enviado con éxito</p>
+      </motion.div>
+      </div>
     </form>
   );
 }
